@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'scribblers-hamza-broken-feather-5061'
+app = 'scribblers-hmz'
 primary_region = 'ams'
 
 [build]
@@ -15,7 +15,7 @@ primary_region = 'ams'
 [env]
   ALLOW_INDEXING = 'true'
   LOBBY_SETTING_BOUNDS_MAX_MAX_PLAYERS = '100'
-  ROOT_URL = 'https://scribblerm.hamza.link'
+  ROOT_URL = 'https://scribblerm.hmz.link'
   SERVE_DIRECTORIES = ':/public'
 
 [http_service]
