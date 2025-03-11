@@ -1,7 +1,6 @@
 # See https://fly.io/docs/reference/configuration/
 
 app = "scribblers-hamza"
-# "fra" is only for paying customers
 primary_region = "ams"
 
 [metrics]
@@ -10,12 +9,14 @@ path = "/v1/metrics"
 
 [build]
 dockerfile = "fly.Dockerfile"
+# Add this line to be explicit about using your Dockerfile
+builder = "dockerfile"
 
 [deploy]
 strategy = "immediate"
 
 [env]
-ROOT_URL = "https://scribblers.hamza.link"
+ROOT_URL = "https://scribblerm.hamza.link"
 ALLOW_INDEXING = true
 SERVE_DIRECTORIES = ":/public"
 LOBBY_SETTING_BOUNDS_MAX_MAX_PLAYERS = 100
@@ -25,7 +26,6 @@ internal_port = 8080
 force_https = true
 auto_stop_machines = true
 auto_start_machines = true
-# Allows true scale to zero
 min_machines_running = 0
 processes = ["app"]
 
