@@ -79,6 +79,8 @@ const language_to_flag = (language) => {
             return "\u{1f1e9}\u{1f1ea}";
         case "ukrainian":
             return "\u{1f1fa}\u{1f1e6}";
+        case "arabic":
+            return "\u{1f1e6}\u{1f1f7}";
         case "russian":
             return "\u{1f1f7}\u{1f1fa}";
         case "italian":

@@ -13,6 +13,7 @@ func init() {
 	// We are making sure to add english first, since it's the default.
 	DefaultTranslation = initEnglishTranslation()
 	initGermanTranslation()
+	initArabicTranslation()
 	initPolishTranslation()
 }
 
