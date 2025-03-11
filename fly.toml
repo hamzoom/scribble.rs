@@ -1,6 +1,6 @@
 # See https://fly.io/docs/reference/configuration/
 
-app = "scribblers"
+app = "scribblers-hamza"
 # "fra" is only for paying customers
 primary_region = "ams"
 
@@ -15,7 +15,7 @@ dockerfile = "fly.Dockerfile"
 strategy = "immediate"
 
 [env]
-ROOT_URL = "https://scribblers.bios-marcel.link"
+ROOT_URL = "https://scribblers.hamza.link"
 ALLOW_INDEXING = true
 SERVE_DIRECTORIES = ":/public"
 LOBBY_SETTING_BOUNDS_MAX_MAX_PLAYERS = 100
