@@ -1,37 +1,45 @@
-# See https://fly.io/docs/reference/configuration/
+# fly.toml app configuration file generated for scribblers-hamza on 2025-03-11T21:41:07+04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
 
-app = "scribblers-hamza"
-primary_region = "ams"
-
-[metrics]
-port = 8080
-path = "/v1/metrics"
+app = 'scribblers-hamza'
+primary_region = 'ams'
 
 [build]
-dockerfile = "fly.Dockerfile"
-# Add this line to be explicit about using your Dockerfile
-builder = "dockerfile"
+  builder = 'dockerfile'
+  dockerfile = 'fly.Dockerfile'
 
 [deploy]
-strategy = "immediate"
+  strategy = 'immediate'
 
 [env]
-ROOT_URL = "https://scribblerm.hamza.link"
-ALLOW_INDEXING = true
-SERVE_DIRECTORIES = ":/public"
-LOBBY_SETTING_BOUNDS_MAX_MAX_PLAYERS = 100
+  ALLOW_INDEXING = 'true'
+  LOBBY_SETTING_BOUNDS_MAX_MAX_PLAYERS = '100'
+  ROOT_URL = 'https://scribblerm.hamza.link'
+  SERVE_DIRECTORIES = ':/public'
 
 [http_service]
-internal_port = 8080
-force_https = true
-auto_stop_machines = true
-auto_start_machines = true
-min_machines_running = 0
-processes = ["app"]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
 
-[[http_service.checks]]
-grace_period = "10s"
-interval = "30s"
-timeout = "5s"
-method = "GET"
-path = "/health"
+  [[http_service.checks]]
+    interval = '30s'
+    timeout = '5s'
+    grace_period = '10s'
+    method = 'GET'
+    path = '/health'
+
+[[vm]]
+  memory = '512mb'
+  cpu_kind = 'shared'
+  cpus = 1
+
+[[metrics]]
+  port = 8080
+  path = '/v1/metrics'
+  https = false
