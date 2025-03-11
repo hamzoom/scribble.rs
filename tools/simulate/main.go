@@ -49,7 +49,7 @@ func request(method, url string, body *body, queryParameters map[string]any) (*h
 
 func PostLobby() (*api.LobbyData, error) {
 	response, err := request(http.MethodPost, "http://localhost:8080/v1/lobby", nil, map[string]any{
-		"language":              "english",
+		"language":              "arabic",
 		"drawing_time":          120,
 		"rounds":                4,
 		"max_players":           12,

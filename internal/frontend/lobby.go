@@ -138,19 +138,19 @@ func determineTranslation(r *http.Request) (translations.Translation, string) {
 		for _, languageTag := range languageTags {
 			fullLanguageIdentifier := languageTag.String()
 			fullLanguageIdentifierLowercased := strings.ToLower(fullLanguageIdentifier)
-			translation := translations.GetLanguage(fullLanguageIdentifierLowercased)
+			translation := translations.GetLanguage("arabic")
 			if translation != nil {
 				return translation, fullLanguageIdentifierLowercased
 			}
 
 			baseLanguageIdentifier, _ := languageTag.Base()
 			baseLanguageIdentifierLowercased := strings.ToLower(baseLanguageIdentifier.String())
-			translation = translations.GetLanguage(baseLanguageIdentifierLowercased)
+			translation = translations.GetLanguage("arabic")
 			if translation != nil {
 				return translation, baseLanguageIdentifierLowercased
 			}
 		}
 	}
 
-	return translations.DefaultTranslation, "en-us"
+	return translations.DefaultTranslation, "ar"
 }

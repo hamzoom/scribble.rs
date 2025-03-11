@@ -83,7 +83,7 @@ var Default = Config{
 		MaxPlayers:         "24",
 		CustomWordsPerTurn: "3",
 		ClientsPerIPLimit:  "2",
-		Language:           "english",
+		Language:           "arabic",
 		ScoreCalculation:   "chill",
 	},
 	LobbySettingBounds: game.SettingBounds{

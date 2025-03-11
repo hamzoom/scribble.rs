@@ -115,7 +115,7 @@ func (handler *V1Handler) postLobby(writer http.ResponseWriter, request *http.Re
 
 	var lowercaser cases.Caser
 	if languageInvalid != nil {
-		lowercaser = cases.Lower(language.English)
+		lowercaser = cases.Lower(language.Arabic)
 	} else {
 		lowercaser = languageData.Lowercaser()
 	}

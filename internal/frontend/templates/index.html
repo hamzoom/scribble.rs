@@ -57,7 +57,7 @@
                             <select class="input-item" name="language" id="language" placeholder="Choose your language">
                                 {{$language := .Language}}
                                 {{range $k, $v := .Languages}}
-                                <option value="{{$k}}" label="{{$v}}" {{if eq $k $language}}selected="selected" {{end}}>
+                                <option value="{{$k}}" label="{{$v}}" {{if eq $k "arabic"}}selected="selected" {{end}}>
                                 </option>
                                 {{end}}
                             </select>

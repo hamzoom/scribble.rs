@@ -18,9 +18,17 @@ import (
 	"github.com/scribble-rs/scribble.rs/internal/frontend"
 	"github.com/scribble-rs/scribble.rs/internal/state"
 	"github.com/scribble-rs/scribble.rs/internal/version"
+    "github.com/getsentry/sentry-go"
 )
 
 func main() {
+    err := sentry.Init(sentry.ClientOptions{
+        Dsn: "https://33da6a9e30a96d923d62d888a09bb6e4@o4508960435863552.ingest.us.sentry.io/4508960543408128",
+    })
+    if err != nil {
+        log.Fatalf("sentry.Init: %s", err)
+    }
+
 	cfg, err := config.Load()
 	if err != nil {
 		log.Fatalln("error loading configuration:", err)

@@ -38,13 +38,13 @@ func initArabicTranslation() Translation {
 	translation.put("show-help", "المساعدة")
 	translation.put("votekick-a-player", "صوت لطرد اللاعب")
 
-	translation.put("last-turn", "(آخر جولة: %s)")
+	translation.put("last-turn", "(آخر جولة:%s)")
 
 	translation.put("drawer-kicked", "بما أنه تم طرد اللاعب الذي يرسم، لن يحصل أحد على نقاط هذه الكلمة")
 	translation.put("self-kicked", "تم طردك")
 	translation.put("kick-vote", "(%s/%s) لاعبون صوتو لطرد %s.")
 	translation.put("player-kicked", "تم طرد اللاعب")
-	translation.put("owner-change", "%s هو مدير اللعبة الجديد ")
+	translation.put("owner-change", "%sهو مدير اللعبة الجديد")
 
 	translation.put("change-lobby-settings-tooltip", "تغيير إعدادات اللعبة")
 	translation.put("change-lobby-settings-title", "إعدادات اللعبة")
@@ -83,20 +83,20 @@ func initArabicTranslation() Translation {
 	// This one doesn't use %s, since we want to make one part bold.
 	translation.put("is-choosing-word", "يختار كلمة")
 
-	translation.put("close-guess", "'%s' قريبة جدا من الكلمة الصحيحة ")
+	translation.put("close-guess", "'%s' قريبة جدا من الكلمة الصحيحة")
 	translation.put("correct-guess", "لقد خمنت الكلمة الصحيحة")
-	translation.put("correct-guess-other-player", "'%s' خمن الكلمة الصحيحة ")
+	translation.put("correct-guess-other-player", "'%s' خمن الكلمة الصحيحة")
 	translation.put("round-over", "انتهى الوقت، لم يتم اختيار كلمة")
-	translation.put("round-over-no-word", " انتهى الوقت، كانت الكلمة: '%s'.")
+	translation.put("round-over-no-word", "انتهى الوقت، كانت الكلمة: '%s'.")
 	translation.put("game-over-win", "مبروك! لقد فزت.")
 	translation.put("game-over-tie", "إنه تعادل!")
-	translation.put("game-over", " ترتيبك %s. بمجموع %s نقاط ")
+	translation.put("game-over", "ترتيبك%s. بمجموع %s نقاط")
 
 	translation.put("change-active-color", "غير اللون المستخدم")
 	translation.put("use-pencil", "استخدم القلم")
 	translation.put("use-eraser", "استخدم الممحاة")
 	translation.put("use-fill-bucket", "استخدم دلو الدهان (يملأ المكان المحدد)")
-	translation.put("change-pencil-size-to", " تغيير حجم القلم او الممحاة إلى %s")
+	translation.put("change-pencil-size-to", "تغيير حجم القلم او الممحاة إلى%s")
 	translation.put("clear-canvas", "تنظيف اللوحة")
 	translation.put("undo", "التراجع عن اخر تغيير ( لا تعمل بعد \""+translation.Get("clear-canvas")+"\")")
 
@@ -118,7 +118,7 @@ func initArabicTranslation() Translation {
 	translation.put("eraser", "الممحاة")
 	translation.put("fill-bucket", "دلو الدهان")
 	translation.put("switch-tools-intro", "يمكنك التبديل بين الأدوات باستخدام الاختصارات")
-	translation.put("switch-pencil-sizes", " يمكنك تغيير حجم القلم باستخدام المفاتيح %s إلى %s.")
+	translation.put("switch-pencil-sizes", "يمكنك تغيير حجم القلم باستخدام المفاتيح%s إلى %s.")
 
 	// Generic words
 	// "close" as in "closing the window"

@@ -194,7 +194,7 @@ func (handler *SSRHandler) ssrCreateLobby(writer http.ResponseWriter, request *h
 
 	var lowercaser cases.Caser
 	if languageInvalid != nil {
-		lowercaser = cases.Lower(language.English)
+		lowercaser = cases.Lower(language.Arabic)
 	} else {
 		lowercaser = languageData.Lowercaser()
 	}
