@@ -17,4 +17,3 @@ playground/
 # Profiling results
 *.pprof
 # Additional files for hosting. Workaround for now ig.
-public/
