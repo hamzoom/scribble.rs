@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-US_DICT="../game/words/en_us"
+US_DICT="../game/words/ar"
 
 # For example on install british dict
 # apt-get install wbritish-large
 
 SYSTEM_GB_DICT='/usr/share/dict/british-english-large'
-OUTPUT_GB_DICT="../game/words/en_gb"
+OUTPUT_GB_DICT="../game/words/ar"
 FIXLIST="./fixlist"
 
 rm -f ${FIXLIST} ${OUTPUT_GB_DICT}

@@ -11,9 +11,9 @@ import (
 // to this function.
 func init() {
 	// We are making sure to add english first, since it's the default.
-	DefaultTranslation = initEnglishTranslation()
+	DefaultTranslation = initArabicTranslation()
+	initEnglishTranslation()
 	initGermanTranslation()
-	initArabicTranslation()
 	initPolishTranslation()
 }
 
