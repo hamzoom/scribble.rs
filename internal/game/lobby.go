@@ -33,7 +33,7 @@ var SupportedLanguages = map[string]string{
 	"french":     "French",
 	"dutch":      "Dutch",
 	"ukrainian":  "Ukrainian",
-	"arabic":     "Arabic",
+	"arabic":     "العربية",
 	"russian":    "Russian",
 	"polish":     "Polish",
 }

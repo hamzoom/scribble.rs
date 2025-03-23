@@ -199,7 +199,7 @@ const set_lobbies = (lobbies, visible) => {
         set_lobby_list_placeholder("", false);
     } else {
         lobby_list.style.display = "none";
-        set_lobby_list_placeholder("There are no lobbies.", true);
+        set_lobby_list_placeholder("لا يوجد ألعاب حالياً", true);
     }
 };
 
